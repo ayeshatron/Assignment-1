@@ -1,0 +1,53 @@
+
+/*making the background fitted*/ 
+body {
+  margin: 0;
+  padding: 0;
+  background: url(media/homepage.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*making a "tabs" menu bar to hold the buttons*/
+.button-container {
+    position: fixed; /*fixing the position of the menu bar throughout the webpage*/
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    background-color: black;
+    border: #505050;
+    z-index: 1000;
+
+}
+
+/*general button customization for a more uniform look*/
+.button-container button {
+    background-color: black;
+    color: rgb(63, 27, 27);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: #505050;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/*to change the color of the button when the cursor hovers*/
+.button-container button:hover {
+background-color: #505050;
+}
+
+/*this code is so that the text with a hyperlink has no different customization*/
+a {
+  text-decoration: none;
+  color:rgb(63, 27, 27);
+}
+
+/*this is for the hyperlink, so that the animation is smoother when the button is clicked*/
+html {
+  scroll-behavior: smooth;
+}
